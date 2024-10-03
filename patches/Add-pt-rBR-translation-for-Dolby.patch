@@ -1,0 +1,84 @@
+From cc04ec1f4afaa986bc31e5f1c784abc3a3e57f08 Mon Sep 17 00:00:00 2001
+From: angelomds42 <angelomds42@gmail.com>
+Date: Thu, 15 Aug 2024 15:01:10 -0300
+Subject: [PATCH] dolby: Import pt-rBR translation
+
+Signed-off-by: angelomds42 <angelomds42@gmail.com>
+---
+ dolby/res/values-pt-rBR/strings.xml | 64 +++++++++++++++++++++++++++++
+ 1 file changed, 64 insertions(+)
+ create mode 100644 dolby/res/values-pt-rBR/strings.xml
+
+diff --git a/dolby/res/values-pt-rBR/strings.xml b/dolby/res/values-pt-rBR/strings.xml
+new file mode 100644
+index 0000000..01d53a9
+--- /dev/null
++++ b/dolby/res/values-pt-rBR/strings.xml
+@@ -0,0 +1,64 @@
++<?xml version="1.0" encoding="utf-8"?>
++<!--
++     Copyright (C) 2023-24 Paranoid Android
++     SPDX-License-Identifier: Apache-2.0
++-->
++<resources>
++
++    <!-- Dolby Atmos -->
++    <string name="dolby_title">Dolby Atmos</string>
++    <string name="dolby_enable">Usar Dolby Atmos</string>
++    <string name="dolby_profile_title">Escolha um perfil</string>
++    <string name="dolby_preset">Equalizador gráfico</string>
++    <string name="dolby_off">Desligado</string>
++    <string name="dolby_on">Ligado</string>
++    <string name="dolby_low">Baixo</string>
++    <string name="dolby_medium">Medio</string>
++    <string name="dolby_high">Alto</string>
++    <string name="dolby_max">Máximo</string>
++    <string name="dolby_unknown">Desconhecido</string>
++    <string name="dolby_on_with_profile">Ligado (%1$s)</string>
++    <string name="dolby_category_settings">Configurações</string>
++    <string name="dolby_bass_enhancer">Aprimorador de graves</string>
++    <string name="dolby_dialogue_enhancer">Aprimorador de diálogos</string>
++    <string name="dolby_spk_virtualizer">Virtualização de alto-falantes</string>
++    <string name="dolby_hp_virtualizer">Virtualização de fone de ouvido</string>
++    <string name="dolby_stereo_widening">Ampliação estéreo</string>
++    <string name="dolby_volume_leveler">Nivelador de volume</string>
++    <string name="dolby_connect_headphones">Conectar fones de ouvido</string>
++    <string name="dolby_reset_profile">Redefinir para os padrões</string>
++    <string name="dolby_reset_profile_toast">As configurações foram redefinidas com sucesso para %1$s perfil</string>
++
++    <!-- Dolby profiles -->
++    <string name="dolby_profile_dynamic">Dinâmico</string>
++    <string name="dolby_profile_video">Filme/Vídeo</string>
++    <string name="dolby_profile_music">Música</string>
++    <string name="dolby_profile_voice">Voz</string>
++
++    <!-- Dolby equalizer presets -->
++    <string name="dolby_preset_default">Flat</string>
++    <string name="dolby_preset_rock">Rock</string>
++    <string name="dolby_preset_jazz">Jazz</string>
++    <string name="dolby_preset_pop">Pop</string>
++    <string name="dolby_preset_classical">Clássico</string>
++    <string name="dolby_preset_hiphop">Hip Hop</string>
++    <string name="dolby_preset_blues">Blues</string>
++    <string name="dolby_preset_electronic">Eletrônico</string>
++    <string name="dolby_preset_country">Country</string>
++    <string name="dolby_preset_dance">Dança</string>
++    <string name="dolby_preset_metal">Metal</string>
++
++    <!-- Dolby equalizer UI -->
++    <string name="dolby_geq_slider_label_gain">Ganho</string>
++    <string name="dolby_geq_preset">Predefinição</string>
++    <string name="dolby_geq_preset_name">Nome da predefinição</string>
++    <string name="dolby_geq_new_preset">Nova predefinição</string>
++    <string name="dolby_geq_rename_preset">Renomear predefinição</string>
++    <string name="dolby_geq_delete_preset">Excluir predefinição</string>
++    <string name="dolby_geq_delete_preset_prompt">Deseja excluir esta predefinição?</string>
++    <string name="dolby_geq_reset_gains">Redefinir ganhos</string>
++    <string name="dolby_geq_reset_gains_prompt">Deseja redefinir esta predefinição para os padrões?</string>
++    <string name="dolby_geq_preset_name_exists">O nome da predefinição já existe!</string>
++    <string name="dolby_geq_preset_name_too_long">O nome da predefinição é muito longo!</string>
++
++</resources>
+-- 
+2.46.2
+
