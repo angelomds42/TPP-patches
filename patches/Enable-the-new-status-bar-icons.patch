@@ -1,0 +1,68 @@
+From 8dcd5ba74e28d6abc8c5c3d8c7f65bd6c4c135fb Mon Sep 17 00:00:00 2001
+From: ralph950412 <ralph950412@gmail.com>
+Date: Sun, 4 Aug 2024 14:25:21 +0800
+Subject: [PATCH] aconfig: Enable the new status bar icons
+
+Change-Id: Ia4407b6df0fa45f5751a45d992d88076c89b5046
+---
+ release/aconfig/ap2a/Android.bp               |  1 +
+ .../com.android.settingslib.flags/Android.bp  | 21 +++++++++++++++++++
+ .../settingslib_flags.textproto               |  6 ++++++
+ 3 files changed, 28 insertions(+)
+ create mode 100644 release/aconfig/ap2a/com.android.settingslib.flags/Android.bp
+ create mode 100644 release/aconfig/ap2a/com.android.settingslib.flags/settingslib_flags.textproto
+
+diff --git a/release/aconfig/ap2a/Android.bp b/release/aconfig/ap2a/Android.bp
+index ea231095..b102cd9b 100644
+--- a/release/aconfig/ap2a/Android.bp
++++ b/release/aconfig/ap2a/Android.bp
+@@ -16,6 +16,7 @@ aconfig_value_set {
+     name: "aconfig_value_set-custom-ap2a",
+     values: [
+         "aconfig-values-ap2a-com.android.server.notification.flags-all",
++        "aconfig-values-ap2a-com.android.settingslib.flags-all",
+         "aconfig-values-ap2a-com.android.systemui.flags-all",
+         "aconfig-values-ap2a-com.android.deviceaswebcam.flags-all",
+     ],
+diff --git a/release/aconfig/ap2a/com.android.settingslib.flags/Android.bp b/release/aconfig/ap2a/com.android.settingslib.flags/Android.bp
+new file mode 100644
+index 00000000..f5277cf8
+--- /dev/null
++++ b/release/aconfig/ap2a/com.android.settingslib.flags/Android.bp
+@@ -0,0 +1,21 @@
++// Copyright 2024 Google Inc. All rights reserved.
++//
++// Licensed under the Apache License, Version 2.0 (the "License");
++// you may not use this file except in compliance with the License.
++// You may obtain a copy of the License at
++//
++//     http://www.apache.org/licenses/LICENSE-2.0
++//
++// Unless required by applicable law or agreed to in writing, software
++// distributed under the License is distributed on an "AS IS" BASIS,
++// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++// See the License for the specific language governing permissions and
++// limitations under the License.
++
++aconfig_values {
++  name: "aconfig-values-ap2a-com.android.settingslib.flags-all",
++  package: "com.android.settingslib.flags",
++  srcs: [
++    "*.textproto",
++  ]
++}
+diff --git a/release/aconfig/ap2a/com.android.settingslib.flags/settingslib_flags.textproto b/release/aconfig/ap2a/com.android.settingslib.flags/settingslib_flags.textproto
+new file mode 100644
+index 00000000..bccf4f4f
+--- /dev/null
++++ b/release/aconfig/ap2a/com.android.settingslib.flags/settingslib_flags.textproto
+@@ -0,0 +1,6 @@
++flag_value {
++    package: "com.android.settingslib.flags"
++    name: "new_status_bar_icons"
++    state: ENABLED
++    permission: READ_ONLY
++}
+-- 
+2.39.5
+
